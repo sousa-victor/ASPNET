@@ -10,13 +10,28 @@ namespace helloworld.Controllers
         [HttpGet]
         public string Hello()
         {
-            return "Hello Turma <br />.NET 03";
+            return "Hello World!";
         }
 
-        [HttpGet("/meunome")]
-        public string MeuNome()
+        [HttpGet("/bsms")]
+        public string bsms()
         {
-            return "Victor";
+            return "Responsabilidade Pessoal," +
+                " mentalidade de crescimento," +
+                " orientação para o futuro," +
+                " persistência," +
+                " comunicação," +
+                " trabalho em equipe," +
+                " proatividade," +
+                " orientação ao detalhe,";
+        }
+
+        [HttpGet("/aprendizados")]
+        public string aprendizados()
+        {
+            return "Revisar ASPNET," +
+                " Praticar banco de dados, " +
+                " Rever CRUD";
         }
     }
 }
